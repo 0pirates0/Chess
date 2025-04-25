@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class King : ChessPiece
 {
-    public bool isWhite = true;
+    private void OnMouseDown()
+{
+    Select();
+}
 
-    // All 8 directions the King can move (1 step in each)
     private readonly int[,] directions = new int[,]
     {
         {1, 0},  // up
@@ -22,6 +24,8 @@ public class King : ChessPiece
     public override void CalculateLegalMoves()
     {
         ChessBoardPlacementHandler.Instance.ClearHighlights();
+        row = 0;
+        col = 4;
 
         for (int i = 0; i < directions.GetLength(0); i++)
         {
@@ -38,7 +42,7 @@ public class King : ChessPiece
                 }
                 else if (IsEnemyPiece(tile))
                 {
-                    ChessBoardPlacementHandler.Instance.Highlight(newRow, newCol); // could be red
+                    ChessBoardPlacementHandler.Instance.Highlight(newRow, newCol);
                 }
             }
         }

@@ -53,10 +53,25 @@
     <UnityVersion>2020.3.13f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn1.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Bishop_l.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Rook_l.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\ChessPiece.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Queen.cs" />
     <Compile Include="Assets\Chess\Scripts\Core\ChessBoardPlacementHandler.cs" />
     <Compile Include="Assets\Chess\Scripts\Core\ChessPlayerPlacementHandler.cs" />
-    <Compile Include="Assets\Chess\Scripts\Core\Pawn.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Knight_l.cs" />
     <Compile Include="Assets\Chess\Scripts\Core\King.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn2.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn3.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn4.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn5.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn6.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn7.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Pawn8.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Knight_r.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Rook_r.cs" />
+    <Compile Include="Assets\Chess\Scripts\Core\Bishop_r.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
